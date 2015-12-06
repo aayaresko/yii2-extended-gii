@@ -64,7 +64,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
             ],
         })
     }}
-<?= !empty($hidden_fields) ? '{#' . implode(",\n", $hidden_fields) . '#}' : ''?>
+<?= !empty($hidden_fields) ? "{#\n" . implode(",\n", $hidden_fields) . "\n#}\n" : ''?>
 <?php else: ?>
     {{ list_view_widget({
             'dataProvider': dataProvider,
