@@ -50,7 +50,34 @@ return [
     // ...
 ];
 ```
-
+```php
+return [
+    'view' => [
+        'renderers' => [
+            'twig' => [
+                'class' => '\yii\twig\ViewRenderer',
+                'cachePath' => '@runtime/twig/cache',
+                'options' => YII_DEBUG ? [
+                    'debug' => true,
+                    'auto_reload' => true,
+                ] : [],
+                'extensions' => YII_DEBUG ? [
+                    '\Twig_Extension_Debug',
+                ] : [],
+                'globals' => [
+                    'html' => '\yii\helpers\Html',
+                ],
+                'functions' => [
+                    'translate' => '\Yii::t',
+                ],
+                'uses' => [
+                    'yii\bootstrap'
+                ],
+            ]
+        ]
+    ]
+]
+```
 You can then access Gii through the following URL:
 
 ```
