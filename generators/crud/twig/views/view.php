@@ -22,7 +22,7 @@ $urlParams = $generator->generateUrlParams(\aayaresko\gii\Generator::TEMPLATE_TY
     <h1>{{ html.encode(this.title) }}</h1>
     <p>
         <a href="{{ path('update', {<?= $urlParams ?>}) }}" class="btn btn-primary">{{ <?= $generator->generateString('Update') ?> }}</a>
-        <a href="{{ path('delete', {<?= $urlParams ?>}) }}" class="btn btn-danger" data-confirm="<?= $generator->generateString('Are you sure you want to delete this item?') ?>" data-method="post">{{ <?= $generator->generateString('Delete') ?> }}</a>
+        <a href="{{ path('delete', {<?= $urlParams ?>}) }}" class="btn btn-danger" data-confirm="{{ <?= $generator->generateString('Are you sure you want to delete this item?') ?> }}" data-method="post">{{ <?= $generator->generateString('Delete') ?> }}</a>
     </p>
     {{ detail_view_widget({
             'model': model,
