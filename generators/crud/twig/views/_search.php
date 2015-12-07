@@ -18,9 +18,9 @@ use yii\helpers\StringHelper;
 $count = 0;
 foreach ($generator->getColumnNames() as $attribute) {
     if (++$count < 6) {
-        echo "    {{ {$generator->generateActiveSearchField($attribute)} }}\n\n";
+        echo "    {{ {$generator->generateActiveSearchField($attribute)}|raw }}\n\n";
     } else {
-        echo "    {# {$generator->generateActiveSearchField($attribute)} #}\n\n";
+        echo "    {# {$generator->generateActiveSearchField($attribute)}|raw #}\n\n";
     }
 }
 ?>
