@@ -36,8 +36,8 @@ class Generator extends DefaultGenerator
      * @inheritdoc
      */
     public $templates = [
-        'default' => __DIR__ . '/default',
-        'twig' => __DIR__ . '/twig',
+        'default' => "{__DIR__}/default",
+        'twig' => "{__DIR__}/twig",
     ];
 
     /**
