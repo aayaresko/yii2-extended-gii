@@ -6,9 +6,6 @@
     "license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/aayaresko/yii2-extended-gii/issues",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/aayaresko/yii2-extended-gii"
     },
     "authors": [
@@ -21,6 +18,7 @@
     "require": {
         "yiisoft/yii2": ">=2.0.4",
         "yiisoft/yii2-bootstrap": "~2.0",
+        "yiisoft/yii2-twig": "*",
         "phpspec/php-diff": ">=1.0.2",
         "bower-asset/typeahead.js": "0.10.* | ~0.11.0"
     },
